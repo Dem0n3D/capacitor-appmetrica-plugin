@@ -18,10 +18,7 @@ export class AppMetricaWeb extends WebPlugin implements AppMetricaPlugin {
   private isMetricaLogs: boolean = false;
 
   constructor() {
-    super({
-      name: 'AppMetrica',
-      platforms: ['web'],
-    });
+    super();
   }
 
   private log(...vars: any[]) {
