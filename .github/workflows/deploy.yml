@@ -33,4 +33,5 @@ jobs:
           git checkout main -- package.json README.md android/src android/build.gradle ios CapacitorAppmetricaPlugin.podspec
           git add .
           git commit -m "Deploy build artifacts"
-          git push -f origin release
+          git tag 7.0.0
+          git push origin 7.0.0
